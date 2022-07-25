@@ -1,4 +1,4 @@
-Get Started
+# Get Started
 
 # Install Go Lang di windows
 
