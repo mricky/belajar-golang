@@ -14,7 +14,7 @@ func main(){
 	// deklarasi multiple constan
 	const (
 		alamat = "Banjar"
-		sekolah = "Politeknikpos"
+		sekolah = "Politeknik Pos Indonesia Bandung"
 	)
 	fmt.Println(alamat)
 	fmt.Printf(sekolah)

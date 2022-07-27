@@ -18,7 +18,10 @@ func main(){
 	for i, value := range slice{
 		fmt.Println("Index", i, "=",value)
 	}
+
+
 	// di golang variable harus digunakan, spya variable dapat tidak digunakan, pakai tanda _
+	// untuk memberitahu si golang variable i tidak digunakan, so gunakan _
 	for _, value := range slice{
 		fmt.Println(value)
 	}

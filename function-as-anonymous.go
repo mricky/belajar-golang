@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-type Blacklist func(string)bool
+type Blacklist func(string)bool // buat alias
 
 func registerUser(name string, blacklist Blacklist){
 	if blacklist(name){
@@ -13,7 +13,7 @@ func registerUser(name string, blacklist Blacklist){
 	}
 }
 func main(){
-	blacklist := func(name string)bool{
+	blacklist := func(name string)bool{ // tanpa nama function 
 		return name == "admin"
 	}
 	registerUser("admin",blacklist)

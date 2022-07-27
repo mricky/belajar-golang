@@ -13,4 +13,7 @@ func main(){
 
 	var lulus = lulusAbsensi && lulusUjian
 	fmt.Println(lulus)
+
+	// cara simple
+	fmt.Println(ujian >= 88 && absensi >80)
 }

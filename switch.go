@@ -17,7 +17,7 @@ func main(){
 
 	}
 
-	// switch mendukung soft expresion
+	// switch mendukung short expresion
 
 	// switch length := len(name); length > 5 {
 	// case true :

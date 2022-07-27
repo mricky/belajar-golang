@@ -3,6 +3,27 @@ package main
 import "fmt"
 
 func main(){
+	// Slice Potongan dari data array
+	// Slice mirip dengan array, yang membedakan adalah ukuran slice bisa berubah
+	// Slice dan Array selalu terkoneksi, dimana slice data yang mengkases sebagian atau seluruh data di Array
+	// Tipe Data Slice memiliki 3 data, pointer, length, dan capacity
+	// Pointer adalah penunjuk data pertama di array per slice
+	// Length adalah panjang dari slice, dan
+	// Capacity adalah kapasitas dari slice, dimana length tidak boleh lebih dari capacity
+	// array(low:high) // dimulai dari index low sampai sebelum high
+	// array[low:] // dimulai dari index low sampai index akhir
+	// array[:high] // dimulai index 0 sampai index sebelum sebelum high
+	// array[:] // dimulai index 0 sampai index akhir array
+
+	// ... jika ga tau jumlah kapasitas nya
+
+	// Function Slice
+	// len(slice)
+	// cap(slice)
+	// append(slice)
+	// make([]TypeData, length, capacity)
+	// copy(destination, source)
+
 	var months = [...]string{
 		"Januari",
 		"Februari",
@@ -24,13 +45,14 @@ func main(){
 
 	// function slice
 	fmt.Println(len(slice)) // jumlah slice
-	fmt.Println(cap(slice)) // julah kapasitas
+	fmt.Println(cap(slice)) // jumlah kapasitas
 	
+
 	// append
 	var slice2 = months[10:]
 	fmt.Println(slice2)
 
-	var slice3 = append(slice2, "Ricky")
+	var slice3 = append(slice2, "Ricky") // membuat slice baru
 	fmt.Println(slice3)
 	fmt.Println(slice2)
 	fmt.Println(months)
@@ -55,5 +77,7 @@ func main(){
 
 	fmt.Println(iniArray)
 	fmt.Println(iniSlice)
+
+	
 	
 }

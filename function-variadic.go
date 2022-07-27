@@ -15,8 +15,8 @@ func main(){
 	// bisa langsung diisi slice dengan tanda ... di belakang
 
 	total := sumAll(10,2,3,2,3,2,3,)
-	slice := []int{1,2,3,4,5,6,7}
-	totalSlice := sumAll(slice...)
+	slice := []int{1,2,3,4,5,6,7} // iniiate slice klo array [...]
+	totalSlice := sumAll(slice...) // jika pakai slice
 
 	fmt.Println(total)
 	fmt.Println(totalSlice)

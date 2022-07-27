@@ -3,6 +3,14 @@ package main
 import "fmt"
 
 func main(){
+
+	// Function Map
+	// len(map)
+	// map[key]
+	// map[key] = value
+	// make(map[TypeKey]TypeValue)
+	// delete(map,key)
+
 	person := map[string]string{
 		"name" : "Mohammad",
 		"address" : "Bandung",
@@ -26,4 +34,12 @@ func main(){
 	delete(book,"ups")
 	fmt.Println(book)
 	fmt.Println(len(book))
+
+	user := map[string]string{
+		"firstName" : "Mohammad",
+		"lastName" : "Ricky",
+	}
+	delete(user, "lastName");
+	fmt.Println(user["firstName"]);
+
 }

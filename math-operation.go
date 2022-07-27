@@ -12,11 +12,10 @@ func main(){
 	fmt.Println(c)
 
 	// Augmented Assignment
-	// penambahan terhadap variable itu sendiri
-
 	var i = 10
 	i += 10 // i = i + 10
 	fmt.Println(i)
+	
 	// Unary Operator
 	i++;
 	fmt.Println(i)
